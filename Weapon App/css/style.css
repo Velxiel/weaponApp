@@ -1,0 +1,340 @@
+.starting-page {
+  padding: 10%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main-nav {
+  z-index: 10;
+}
+
+#js-nav {
+  z-index: 1000;
+  background-color: #D4D4C9;
+  position: fixed;
+  top: 50px;
+  width: 70%;
+  transform: translateX(-120%);
+  transition: transform 0.25s;
+}
+
+#js-nav.nav-opened {
+  transform: translateX(0);
+}
+
+body {
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  background-color: #526740;
+  /*background: url(images/nysl_logo.png), url(images/soccer.png);*/
+  background-repeat: no-repeat;
+  background-size: 150px 150px, 1024px 768px;
+  background-attachment: fixed;
+}
+
+#index {
+  background-color: #CBDDFC;
+}
+
+#filters {
+  background-color: #A3F5E1;
+}
+
+#myWeapons {
+  background-color: #E8CFF6;
+}
+
+#createNew {
+  background-color: #AAF797;
+}
+
+#container {
+  max-width: 900px;
+  min-width: 500px;
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+#nav {
+  position: fixed;
+  top: 30%;
+  line-height: 150%;
+  z-index: 1;
+  background: white;
+}
+
+#nav a, #nav li {
+  list-style-type: none;
+}
+
+a:link {
+  font-size: 1.4em;
+  font-style: italic;
+  font-display: swap;
+  font-weight: bold;
+}
+
+#js-nav a.list-group-item:hover {
+  background-color: blue;
+}
+
+#js-nav a.list-group-item.active {
+  color: white;
+}
+
+a:visited {}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+}
+
+#pageheader {
+  position: relative;
+  left: 25%;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+#bodycontent {
+  background: transparent;
+  /*border-style: dashed;
+  border-color: black;*/
+  /*border-width: 3px;*/
+  /*padding: 1em;*/
+  width: 100%;
+  font-weight: bold;
+  color: black;
+  text-align: center justify;
+  z-index: 2;
+  padding: 0 10px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+#bodycontent h1 {
+  font-size: 1.5em;
+}
+
+#bodycontent h2 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+#bodyconent h2 {
+  padding: 0px;
+  margin: 0px;
+}
+
+#bodycontent ul {
+  list-style-type: square;
+}
+
+#infotable table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+#infotable th {
+  text-decoration: underline;
+  padding: 0 1.0em;
+  padding-top: 1em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+#infotable td {
+  text-align: left;
+  padding: 0 1.0em;
+}
+
+#bodycontent address {
+  font-style: normal;
+}
+
+#titlecenter {
+  text-align: center;
+}
+
+#upcoming h2 {
+  font-size: 1.0em;
+  font-weight: normal;
+  font-style: italic;
+  text-transform: none;
+}
+
+iframe {
+  border: 0;
+  overflow: hidden;
+  margin: 0;
+}
+
+#infotable h3, #rules h3 {
+  display: inline-block;
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-size: 1em;
+}
+
+#gamelocations td {
+  padding: 2em;
+}
+
+legend {
+  font-weight: bold;
+}
+
+fieldset {
+  margin: 2em 0;
+}
+
+fieldset label {
+  padding-left: 2em;
+}
+
+.impinfo {
+  font-weight: bold;
+  font-size: .95em;
+  padding: 0em;
+}
+
+.note {
+  font-weight: normal;
+  font-size: 1.0em;
+}
+
+.indent {
+  margin-top: -1em;
+  margin-left: 1em;
+}
+
+.uniformchoice, .contract {
+  font-size: .8em;
+}
+
+.announcement {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.stylized input {
+  display: block;
+  margin-bottom: .5em;
+  width: 47.5%;
+}
+
+
+/*---------------------------------------------------------ATTENTION-----------------------------*/
+
+@media (max-height: 420px;
+) and (orientation: landscape;
+) {
+  .stylized input {
+    text-align: center;
+    width: 70%;
+  }
+}
+
+@media (max-width: 321px) {
+  .stylized input {
+    width: 44%;
+  }
+}
+
+@media (max-width: 430px) {
+  .stylized input {
+    width: 55%;
+  }
+}
+
+fieldset {
+  border: solid 1px green;
+}
+
+form h3 {
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.stylized label {
+  width: 12em;
+  float: left;
+}
+
+input {
+  padding: 4px 2px;
+  border: solid 1px green;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 1em;
+  font-size: 0.7em;
+  color: grey;
+}
+
+#js-nav .list-group a.list-group-item img {
+  width: 1.2em;
+  margin-right: 2em;
+}
+
+a.navbar-title {
+  font-size: 2em;
+}
+
+#bodycontent .infopage {
+  width: 100%;
+}
+
+#bodycontent .stylized {
+  text-align: left;
+}
+
+button.accordion {
+  background-color: #4C98EA;
+  color: #000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: double;
+  text-align: center;
+  outline: none;
+  font-size: 25px;
+  transition: 0.6s;
+}
+
+button.accordion.active, button.accordion:hover {
+  background-color: #ccc;
+}
+
+button.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+button.accordion.active:after {
+  content: "\2212";
+}
+
+div.panel {
+  padding: 0 20px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.centerBold {
+  font-size: 20px;
+  text-align: center;
+}
